@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "scrape-goettingen.js",
   "scripts": {
+    "main": "ts-node src/main.ts",
     "build": "tsc",
     "scrape": "node dist/scrape-jobs.js",
     "process-all": "node dist/process-all.js",
