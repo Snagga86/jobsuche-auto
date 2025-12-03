@@ -1,0 +1,25 @@
+{
+  "name": "jobsuche-auto",
+  "version": "1.0.0",
+  "main": "scrape-goettingen.js",
+  "scripts": {
+    "build": "tsc",
+    "scrape": "node dist/scrape-jobs.js",
+    "process-all": "node dist/process-all.js",
+    "concat-all": "node dist/concat-all-universities.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.1.2",
+    "playwright": "^1.57.0"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^1.0.0",
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "description": ""
+}
