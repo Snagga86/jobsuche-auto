@@ -81,7 +81,7 @@
   },
   {
     "name": "RWTH-Aachen",
-    "url": "https://www.rwth-aachen.de/go/id/bmbx"
+    "url": "https://www.rwth-aachen.de/cms/root/wir/karriere/~buym/rwth-jobportal/?showall=1"
   },
   {
     "name": "TU-Braunschweig",
@@ -89,7 +89,7 @@
   },
   {
     "name": "TU-Dresden",
-    "url": "https://tu-dresden.de/karriere/stellenangebote"
+    "url": "https://tu-dresden.de/tu-dresden/arbeiten-an-der-tud/stellenangebote/stellenangebote?kat=2&style=cms2"
   },
   {
     "name": "TU-Dortmund",
@@ -173,11 +173,11 @@
   },
   {
     "name": "Freie Universität Berlin",
-    "url": "https://www.fu-berlin.de/universitaet/beruf-karriere/jobs/index.html"
+    "url": "https://www.fu-berlin.de/universitaet/beruf-karriere/jobs/wiss/index.html"
   },
   {
     "name": "Christian-Albrechts-Universität zu Kiel",
-    "url": "https://www.uni-kiel.de/personal/de/stellen"
+    "url": "https://www.uni-kiel.de/personal/de/stellen/extern/wiss"
   },
   {
     "name": "Universität Greifswald",
@@ -185,11 +185,7 @@
   },
   {
     "name": "Universität Tübingen",
-    "url": "https://uni-tuebingen.de/universitaet/karriere/"
-  },
-  {
-    "name": "Universität zu Köln",
-    "url": "https://karriere.uni-koeln.de"
+    "url": "https://uni-tuebingen.de/universitaet/karriere/freie-stellen/"
   },
   {
     "name": "Universität Duisburg-Essen",
@@ -206,5 +202,125 @@
   {
     "name": "Universität Witten/Herdecke",
     "url": "https://www.uni-wh.de/universitaet/stellenangebote"
+  },
+  {
+    "name": "Universität Zürich",
+    "url": "https://www.uzh.ch/de/explore/work/jobs"
+  },
+  {
+    "name": "Universität Basel",
+    "url": "https://www.unibas.ch/de/Arbeiten-an-der-Universitaet-Basel/Offene-Stellen.html"
+  },
+  {
+    "name": "Universität Bern",
+    "url": "https://www.karriere.unibe.ch/stellen/stellenportal/index_ger.html"
+  },
+  {
+    "name": "Universität Innsbruck",
+    "url": "https://lfuonline.uibk.ac.at/public/karriereportal.home"
+  },
+  {
+    "name": "Technische Universität Wien",
+    "url": "https://jobs.tuwien.ac.at/Jobs"
+  },
+  {
+    "name": "Technische Universität Graz",
+    "url": "https://jobs.tugraz.at/de/jobs"
+  },
+  {
+    "name": "Johannes Kepler Universität Linz",
+    "url": "https://karriere.jku.at/hcm/jobexchange/showJobOfferList.do"
+  },
+  {
+    "name": "University of St. Gallen (HSG)",
+    "url": "https://www.unisg.ch/de/universitaet/arbeiten-an-der-hsg/jobs/"
+  },
+  {
+    "name": "ETH Zürich",
+    "url": "https://jobs.ethz.ch"
+  },
+  {
+    "name": "EPFL Lausanne",
+    "url": "https://careers.epfl.ch"
+  },
+  {
+    "name": "Universität Klagenfurt (Alpen-Adria-Universität Klagenfurt)",
+    "url": "https://jobs.aau.at"
+  },
+  {
+    "name": "DFKI – Deutsches Forschungszentrum für Künstliche Intelligenz",
+    "url": "https://www.dfki.de/web/ueber-uns/karriere"
+  },
+  {
+    "name": "Fraunhofer-Gesellschaft",
+    "url": "https://jobs.fraunhofer.de"
+  },
+  {
+    "name": "Helmholtz-Zentrum München",
+    "url": "https://jobs.helmholtz-muenchen.de"
+  },
+  {
+    "name": "Helmholtz-Zentrum für Informationssicherheit (CISPA)",
+    "url": "https://jobs.cispa.de"
+  },
+  {
+    "name": "AIT Austrian Institute of Technology",
+    "url": "https://jobs.ait.ac.at"
+  },
+  {
+    "name": "ZHAW Zürcher Hochschule für Angewandte Wissenschaften",
+    "url": "https://www.zhaw.ch/de/jobs"
+  },
+  {
+    "name": "FH OÖ – University of Applied Sciences Upper Austria",
+    "url": "https://jobs.fh-ooe.at"
+  },
+  {
+    "name": "Hochschule Furtwangen University",
+    "url": "https://jobs.hs-furtwangen.de"
+  },
+  {
+    "name": "Hochschule Ravensburg-Weingarten",
+    "url": "https://stellen.rwu.de"
+  },
+  {
+    "name": "FH Technikum Wien",
+    "url": "https://jobs.technikum-wien.at"
+  },
+  {
+    "name": "ABB Schweiz",
+    "url": "https://careers.abb/switzerland/de"
+  },
+  {
+    "name": "Bosch Gruppe",
+    "url": "https://jobs.bosch.com"
+  },
+  {
+    "name": "BMW Group",
+    "url": "https://jobs.bmwgroup.com"
+  },
+  {
+    "name": "Siemens AG",
+    "url": "https://jobs.siemens.com"
+  },
+  {
+    "name": "Infineon Technologies",
+    "url": "https://jobs.infineon.com"
+  },
+  {
+    "name": "Festo SE & Co. KG",
+    "url": "https://jobs.festo.com"
+  },
+  {
+    "name": "ZF Friedrichshafen AG",
+    "url": "https://jobs.zf.com"
+  },
+  {
+    "name": "Continental AG",
+    "url": "https://jobs.continental.com"
+  },
+  {
+    "name": "SICK AG",
+    "url": "https://jobs.sick.com"
   }
 ]

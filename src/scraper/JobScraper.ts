@@ -239,6 +239,16 @@ private async getNextButton(page: Page): Promise<ElementHandle<HTMLElement> | nu
 }
 
 private async handleCookieBanner(page: Page): Promise<void> {
+  // Wenn Seite schon zu ist, direkt raus
+  if (page.isClosed()) return;
+
+  // sicherheitshalber: warten, bis DOM steht
+  try {
+    await page.waitForLoadState('domcontentloaded', { timeout: 5000 });
+  } catch {
+    // egal, wir probieren es trotzdem
+  }
+
   const selectors: string[] = [
     // TrustArc / SAP
     '#truste-consent-button',
@@ -260,19 +270,29 @@ private async handleCookieBanner(page: Page): Promise<void> {
     '[aria-label*="cookie" i] button:has-text("OK")'
   ];
 
-  for (const sel of selectors) {
-    const btn = await page.$(sel);
-    if (btn) {
-      try {
-        console.log('>> Cookie-Banner gefunden, klicke:', sel);
-        await btn.click({ timeout: 2000 });
-        await this.sleep(500);
-        break;
-      } catch {
-        // wenn der Klick fehlschlägt, einfach zum nächsten Selector
-      }
-    }
-  }
-}
+  try {
+    for (const sel of selectors) {
+      const btn = await page.$(sel);
+      if (!btn) continue;
 
+      // Klick + evtl. Navigation gleichzeitig behandeln
+      await Promise.all([
+        btn.click().catch(() => {}), // wenn bei Navigation weg: egal
+        page.waitForLoadState('load', { timeout: 10000 }).catch(() => {}),
+      ]);
+
+      break;
+    }
+  } catch (err: any) {
+    // genau dein Fehlerfall: Navigation während des Cookie-Checks
+    if (typeof err?.message === 'string' &&
+        err.message.includes('Execution context was destroyed')) {
+      console.warn('Cookie-Banner-Handling wegen Navigation abgebrochen.');
+      return; // einfach leise aussteigen
+    }
+
+    // andere Fehler weiterwerfen
+    throw err;
+  }
+  }
 }

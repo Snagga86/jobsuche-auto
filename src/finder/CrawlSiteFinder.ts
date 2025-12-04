@@ -26,7 +26,7 @@ export class CrawlSiteFinder {
 
   private buildPrompt(regionOrFilterDescription: string, existingSites: CrawlSite[]): string {
     return `
-Du findest offizielle Jobportale von Hochschulen.
+Du findest offizielle Jobportale von Arbeitgebern.
 
 Filter:
 - ${regionOrFilterDescription}
@@ -45,7 +45,7 @@ Aufgabe:
 
 Antwortformat (reines JSON):
 [
-  { "name": "Universität X", "url": "https://..." }
+  { "name": "Arbeitgeber X", "url": "https://..." }
 ]
 `.trim();
   }
